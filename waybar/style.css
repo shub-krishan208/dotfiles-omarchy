@@ -84,15 +84,6 @@ tooltip {
     padding-right: 10px;
 }
 
-window#waybar.kitty {
-    background-color: #111111;
-    color: #ffffff;
-}
-
-window#waybar.chromium {
-    background-color: #eeeeee;
-    color: #000000;
-}
 
 /* make window module transparent when no windows present */
 window#waybar.empty #window {
