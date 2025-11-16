@@ -41,6 +41,7 @@
   "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",
     "on-click": "omarchy-menu",
+    "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
   "custom/update": {
@@ -55,19 +56,19 @@
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "$TERMINAL -e btop"
+    "on-click": "xdg-terminal-exec btop"
   },
   "clock": {
     "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
     "tooltip": false,
-    "on-click-right": "omarchy-cmd-tzupdate"
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
-    "format-wifi": "{icon} {essid}",
-    "format-ethernet": "󰀂",
+    "format-wifi": "⇣{bandwidthDownBytes} {icon} {essid}",
+    "format-ethernet": "⇣{bandwidthDownBytes} 󰀂",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -79,7 +80,7 @@
   "battery": {
     "format": "{icon} {capacity}%",
     "format-discharging": "{icon} {capacity}%",
-    "format-charging": "{icon}",
+    "format-charging": "{icon} {capacity}%",
     "format-plugged": "",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
@@ -98,13 +99,13 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
-    "format-connected": "",
+    "format-connected": "󰂱",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "blueberry"
   },
   "pulseaudio": {
-    "format": "{icon}",
-    "on-click": "$TERMINAL --class=Wiremix -e wiremix",
+    "format": "{icon} {volume}%",
+    "on-click": "xdg-terminal-exec --app-id=com.omarchy.Wiremix -e wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,

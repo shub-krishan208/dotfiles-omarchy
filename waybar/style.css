@@ -1,17 +1,13 @@
 @import "../omarchy/current/theme/waybar.css";
 
 * {
-  /* background-color: @background; */
-  /* background-color: rgba(0, 0, 0, 0); */
-  background-color: rgba(46, 52, 64, 0.1);
-  transition-property: background-color;
-  transition-duration: .5s;
+  background-color: @background;
   color: @foreground;
 
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: CaskaydiaMono Nerd Font;
+  font-family: 'CaskaydiaMono Nerd Font';
   font-size: 12px;
 }
 
@@ -34,11 +30,8 @@
   opacity: 0.5;
 }
 
-#tray,
 #cpu,
 #battery,
-#network,
-#bluetooth,
 #pulseaudio,
 #custom-omarchy,
 #custom-screenrecording-indicator,
@@ -47,8 +40,20 @@
   margin: 0 7.5px;
 }
 
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
 #custom-expand-icon {
-  margin-right: 7px;
+  margin-right: 20px;
 }
 
 tooltip {
@@ -75,17 +80,4 @@ tooltip {
 
 #custom-screenrecording-indicator.active {
   color: #a55555;
-}
-
-/* custom shit */
-#window {
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-/* make window module transparent when no windows present */
-window#waybar.empty #window {
-    background-color: transparent;
 }
