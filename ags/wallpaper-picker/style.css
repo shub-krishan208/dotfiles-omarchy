@@ -1,0 +1,84 @@
+/* Main Window */
+window {
+  background-color: transparent;
+}
+
+.picker-container {
+  background-color: rgba(24, 24, 37, 0.55);
+  border-radius: 12px;
+  border: 1px solid #313244;
+  padding: 20px;
+}
+
+.picker-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #cdd6f4;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button.wallpaper-card {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  min-width: 300px;
+  min-height: 169px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+button.wallpaper-card:hover {
+  border: 2px solid #89b4fa;
+  /* transform: scale(1.05); */
+  box-shadow: 0 4px 12px rgba(137, 180, 250, 0.3);
+}
+
+button.wallpaper-card.selected {
+  border: 2px solid #89b4fa;
+  box-shadow: 0 4px 12px rgba(137, 180, 250, 0.3);
+}
+
+/* Hides standard button junk */
+button.wallpaper-card > widget {
+  all: unset;
+}
+
+/* Style for images inside buttons */
+button.wallpaper-card image {
+  border-radius: 8px;
+  min-width: 300px;
+  min-height: 169px;
+}
+
+button.wallpaper-card box {
+  min-width: 300px;
+  min-height: 169px;
+}
+
+button.wallpaper-card.gif-card layout {
+  min-width: 300px;
+  min-height: 169px;
+  border-radius: 8px;
+}
+
+button.wallpaper-card.gif-card {
+  padding: 0;
+}
+
+/* Hide scrollbars */
+scrolledwindow undershoot.left,
+scrolledwindow undershoot.right,
+scrolledwindow undershoot.top,
+scrolledwindow undershoot.bottom {
+  background-image: none;
+}
+
+scrollbar {
+  opacity: 0;
+}
