@@ -5609,3 +5609,330 @@ rcpp 1901A.cpp
 bat input.txt 
 rcpp 1901A.cpp 
 clear
+mv .bashrc .config/.bashrc
+ln -s ~/.config/.bashrc  ~/.bashrc
+lsa
+mv .bash_history .config/.bash_history
+ln -s ~/.config/.bash_history  ~/.bash_history
+lsa
+mv .bash_logout .config/.bash_logout
+lsa
+
+lsa
+mv .bash_profile .config/.bash_profile
+lsa
+ln -s ~/.config/.bash_profile  ~/.bash_profile
+lsa
+cd config
+git add .bashrc .bash_history .bash_logout .bash_profile 
+git commit -m "bash dotfiles"
+git push
+cd .config
+git add -u
+git commit -m "changes to lazyvim conf"
+git push
+cd ..
+lsa
+bat hydevm 
+bun dev:api
+cd saeg
+cd sage
+cd ..
+lsa
+cd sage
+docker compose up
+bun dev:web
+lazydocker
+cd 
+lazydocker
+git add .
+alzygit
+lazygit 
+bun run --filter='./apps/web' type-check
+git pull origin
+git pull origin main
+git push origin shubham/onboarding 
+git add .
+git commit -m "feat: signup T&C/Privacy consent and email opt-in"
+git push origin shubham/onboarding 
+cd applications
+lsa
+bat zen
+bat zen.desktop 
+/opt/zen/zen-bin
+cd sage
+docker compose up
+bun dev:web
+bun dev:api
+cd /usr/share/figlet/fonts/
+lsa
+cd ..
+lsa
+lta
+cd fonts/
+lsa
+clear
+nvim ANSIShadow.flf
+sudo nvim ANSIShadow.flf
+lsa
+showfigfonts
+showfigfonts | less
+cd
+cmatrix -C blue
+cmatrix -C blue -s
+cmatrix -C blue -o
+cmatrix -C blue 
+cmatrix -C blue -o
+cmatrix -C blue -b
+cmatrix -C blue -B
+cmatrix -C blue -a
+cmatrix -C blue-m
+cmatrix -C blue -m
+cmatrix
+nvim
+cd cf
+cd playground/
+nvim test.cpp 
+clear
+cd
+figlet hello wprld
+figlet hello world
+clear
+figlet hello world
+showfigfonts 
+clear
+figlet -f ANSIShadow "hello world"
+figlet -t -f ANSIShadow "hello world"
+figlet -c -f ANSIShadow "hello world"
+figlet -t -f ANSIShadow "hello world"
+figlet -t -f ANSIShadow "\hello world"
+figlet -t -f ANSIShadow "Shub"
+figlet "Shub"
+figlet "</>"
+figlet "< / >"
+figlet "< Workhard / >"
+silent
+OLD_PS1="$PS!"
+PS1=""
+echo $PS1
+echo $OLD_PS1
+echo $OLD_PS1akak
+clear
+PS1="" command_here; PS1="$OLD_PS1"
+PS1="" figlet "Hello World"; PS1="$OLD_PS1"
+clear
+clear; figlet "HELLO"; read -r; clear
+clear; figlet "Shub"; read -r; clear
+clear; figlet "< Workhard />"; read -r; clear
+clear; figlet "< Workhard / >"; read -r; clear
+clear; figlet -f small "< Workhard / >"; read -r; clear
+clear; figlet -f mini "< Workhard / >"; read -r; clear
+clear;\figlet -f mini "< Workhard / >"; read -r; clear
+clear; \ figlet -f mini "< Workhard / >"; read -r; clear
+clear; figlet -f mnemonic "< Workhard / >"; read -r; clear
+clear; figlet -f big "< Workhard / >"; read -r; clear
+clear; figlet "< Workhard / >"; read -r; clear
+clear; figlet "<   / >"; read -r; clear
+clear; echo "<  / >"; read -r; clear
+cmatrix
+man cmatrix 
+cd code
+lsa
+mkdir metakgp
+cd metakgp/
+lsa
+git clone https://github.com/shub-krishan208/gyft.git
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+cd downlo
+bat 24MA10063_timetable.ics 
+rm 24MA10063_timetable.ics 
+bat 24MA10063_timetable.ics 
+bat test_timetable
+bat test_timetable.ics 
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+clear
+cp ~/Downloads/24MA10063_timetable.ics .
+cd frontend/
+pnpn install ical.js
+pnpm install ical.js
+pnpm add ical.js
+pnpm add -D @types/ical.js
+pnpm remove ical.js
+pnpm add ts-ics
+code ..
+pnpm add @ts-ics/schema-zod
+git add .
+git commit -m "added parsing, generating ics file on frontend"
+pnpm add tailwindcss @tailwindcss/vite
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+cd ..
+docker compose -f docker-compose-dev.yaml up
+git checkout -b shubham
+python -m venv .venv
+source .venv/bin/activate
+pip --version
+python --version
+bat requirements.
+bat requirements.txt 
+pip install -r requirements.txt
+/home/archy/rack/code_rack/metakgp/gyft/.venv-1/bin/python -m pip install -r requirements.txt
+deactivate
+ncdu
+source .venv/bin/activate
+deactivate
+source .venv-r/bin/activate
+source .venv-1/bin/activate
+deactivate
+source .venv/bin/activate
+which python
+which pip
+pip install -r requirements.txt 
+clear
+rm -rf .venv-1
+ncdu
+python gyft.py
+python gyft.py 
+ls
+ls --directory 
+cd frontend/
+lsa
+pnpm install
+pnpm run dev
+cd sage
+code .
+cd sage
+cd ..
+nvim rebase.bak.txt
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+git pull
+git switch main
+git pull main
+git pull origin main
+git switch shubham/onboarding
+git pull origin shubham/onboarding
+git rebase main
+cd ./packages/database/
+lsa
+bun db:generate
+bun db:migrate
+clear
+cd ..
+git add .
+cd ./database/
+bun db:generate
+bun db:migrate
+bun db:generate
+bun db:migrate
+bun db:generate
+bun db:migrate
+git add .
+git switch main
+git rebase shubham/onboarding
+git reflog
+git reset --har
+git checkout main
+git reset --hard c3677fe
+git log
+clear
+git reflog
+git reset --hard 96c1406
+git pull origin main
+git switch shubham/onboarding
+git push --force-with-lease origin shubham/onboarding
+bun db:migrate
+bun db:generate
+bun db:migrate
+cd ./src/
+bun db:migrate
+clear
+cd sage
+curl -X POST "https://api.cloudflare.com/client/v4/accounts/1ea9a3a86808c0943c6228093fe6bc6d/stream/600a9d07c70d5f69ee9f1102c6ea1610/token" -H "Authorization: Bearer 6D6Y7l1kS7f2E-mlrep4O5fA4BbPTCpOxJl95afw" -H "Content-Type: application/json"-d '{"exp" : 3600}'
+exit
+btop
+cd packages/database/
+bun db:push
+cd sage
+git add .
+git commit -m "fix: minor bug fixes"
+git push origin shubham/onboarding 
+git pull
+git pull origin shubham/onboarding 
+git switch main
+git pull origin main
+git branch -d shubham/fixes 
+git checkout -b shubham/fixes
+git log
+clear
+git add .
+git commit -m "fix: video player not working in lessons"
+git push -u origin shubham/fixes
+git pull 
+source /home/archy/rack/code_rack/metakgp/gyft/.venv/bin/activate
+cd ./frontend/
+pnpm run dev
+source ./.venv/bin/activate
+clear
+py ./gyft.py
+python ./gyft.py
+docker compose up
+lazydocker 
+lazydocker
+cd
+lazydocker
+exit
+cd sage
+bun dev:api
+cd sage
+docker compose up 
+bun dev:web
+cd sage
+bun dev:web
+sudo lsblk -f
+cd ..
+sudo ncdu .
+clear
+ncdu .
+clear
+ffmpeg
+sudo pacman -S yt-dlp
+sudo pacman -Syuu
+sudo pacman -Syyu
+sudo pacman -yyu
+sudo pacman -Syy
+sudo pacman -S yt-dlp
+sudo pacman -S yt-dlp-ejs
+yt-dlp
+yt-dlp --version
+clear
+yt-dlp 6UlU_FsicK8&t=1382s
+ping 8.8.8.8
+yt-dlp 6UlU_FsicK8&t=1382s -k
+yt-dlp -k 6UlU_FsicK8&t=1382s
+python
+claere
+vlear
+clear
+cd 
+sudo lsblk -f
+-k
+cd ..
+ncdu
+sudoncdu
+sudo ncdu
+lsa
+nautilus .
+yt-dlp --ignore-errors --continue --no-overwrites --download-archive progress.txt 'https://www.youtube.com/playlist?list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB'
+claer
+clear
+nmtui
+19940311
+nmtui
+history
+bun dev:web
+bun dev:api
+cd sage
+lsa
+docker compose up
