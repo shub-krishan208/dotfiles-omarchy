@@ -55,3 +55,9 @@ rcpp() {
   in="${2:-input.txt}"
   g++ "$f" -o "${f%.cpp}" && ./"${f%.cpp}" < "$in"
 }
+
+# pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"

@@ -1,0 +1,62 @@
+# Application bindings
+$terminal = uwsm app -- $TERMINAL
+$browser = omarchy-launch-browser
+
+bindd = SUPER, return, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)"
+bindd = SUPER, F, File manager, exec, uwsm app -- nautilus --new-window
+bindd = SUPER, B, Browser, exec, $browser
+bindd = SUPER SHIFT, B, Browser (private), exec, $browser --private
+bindd = SUPER, M, Music, exec, omarchy-launch-or-focus spotify
+bindd = SUPER, N, Editor, exec, code
+bindd = SUPER, T, Activity, exec, $terminal -e btop
+bindd = SUPER, D, Docker, exec, $terminal -e lazydocker
+#bindd = SUPER, G, Signal, exec, omarchy-launch-or-focus signal "uwsm app -- signal-desktop"
+bindd = SUPER, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- obsidian -disable-gpu --enable-wayland-ime"
+bindd = SUPER, slash, Passwords, exec, uwsm app -- 1password
+bindd = SUPER, Z, Zen-Bowser, exec, /opt/zen/zen-bin
+
+# If your web app url contains #, type it as ## to prevent hyperland treat it as comments
+bindd = SUPER, A, ChatGPT, exec, omarchy-launch-webapp "https://chatgpt.com"
+bindd = SUPER SHIFT, A, Gemini, exec, omarchy-launch-webapp Gemini "https://gemini.google.com/"
+bindd = SUPER, E, Email, exec, omarchy-launch-webapp "https://app.hey.com"
+bindd = SUPER, Y, YouTube Music, exec, omarchy-launch-or-focus-webapp YouTubeMusic "https://music.youtube.com/"
+bindd = SUPER ALT, G, Github, exec, omarchy-launch-or-focus-webapp Github "https://github.com"
+bindd = SUPER SHIFT, F, Ferdium, exec, ferdium
+bindd = SUPER, X, X, exec, omarchy-launch-webapp "https://x.com/"
+bindd = SUPER SHIFT, X, X Post, exec, omarchy-launch-webapp "https://x.com/compose/post"
+
+# Overwrite existing bindings, like putting Omarchy Menu on Super + Space
+# unbind = SUPER, SPACE
+# bindd = SUPER, SPACE, Omarchy menu, exec, omarchy-menu
+#
+# Example binds, see https://wiki.hyprland.org/Configuration/Binds/ for more
+# Move/Resize windows with SUPER + LMB/RMB and drag 
+bindm = SUPER, mouse:272, movewindow
+bindm = SUPER ALT, mouse:272, resizewindow # resize with SUPER + ALT + mouse click
+
+bindd = SUPER, L, 🔒Lock, exec, hyprlock
+bindd = SUPER ALT, M, Music Controller, exec, $terminal --class=Wiremix -e wiremix # launch audio Controller
+bindd = SUPER ALT, B, Bluetooth Controller, exec, blueberry # bluetooth config shortcut
+bindd = SUPER ALT, N, Network Manager, exec, omarchy-launch-wifi # wifi/network controller 
+
+# New key mappings for volume, brightness control
+
+bindeld = SUPER CTRL, right, Volume up (aliter), exec, $osdclient --output-volume raise
+bindeld = SUPER CTRL ALT, right, Volume up precise (aliter), exec, $osdclient --output-volume +1
+bindeld = SUPER CTRL, left, Volume down (aliter), exec, $osdclient --output-volume lower
+bindeld = SUPER CTRL ALT, left, Volume down precise (aliter), exec, $osdclient --output-volume -1
+bindeld = SUPER CTRL ALT, M, Mute (aliter), exec, $osdclient --output-volume mute-toggle
+
+bindeld = SUPER CTRL, up, Brightness up (aliter), exec, $osdclient --brightness raise
+bindeld = SUPER CTRL ALT, up, Brightness up (aliter), exec, $osdclient --brightness +1
+bindeld = SUPER CTRL, down, Brightness down (aliter), exec, $osdclient --brightness lower
+bindeld = SUPER CTRL ALT, down, Brightness down precise (aliter), exec, $osdclient --brightness -1
+
+# Clipboard settings
+
+bindd = SUPER, C, launch clipboard, exec, pkill -x rofi || ~/.local/share/bin/cliphist.sh c
+bindd = SUPER SHIFT,  C,  launch clipboard Manager, exec, pkill -x rofi || ~/.local/share/bin/cliphist.sh
+
+# media controls
+
+bindld = SUPER CTRL, P,Play/Pause (aliter), exec, $osdclient --playerctl play-pause

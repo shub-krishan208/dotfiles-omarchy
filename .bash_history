@@ -5936,3 +5936,397 @@ bun dev:api
 cd sage
 lsa
 docker compose up
+cd config
+git add -u
+code .
+cd nvim
+lds
+lsa
+cd lua/config/
+lsa
+nvim lazy.lua 
+lsa
+npm run dev
+exit
+cd  tsg
+lsa
+npm create-next-app@latest
+cd
+bat .npmrc
+exit
+cp ~/Downloads/plan.project.md ./
+git add remote origin https://github.com/shub-krishan208/pale-tsg-v2.git
+git init
+git add remote origin https://github.com/shub-krishan208/pale-tsg-v2.git
+git remote add origin https://github.com/shub-krishan208/pale-tsg-v2.git
+cd ..
+cd PALE.deprecated/
+touch README.md
+cd ../PALE-tsg/
+touch .gitignore
+npm create-next-app@latest
+npm create-next-app
+npm help
+npm create next@latest
+npm create-next-app@latest frontend
+npx create-next-app@latest frontend
+cd frontend/
+npm install
+pnpm install
+clear
+cd ..
+lsa
+cd backend
+python --version
+pyenv 
+pyenv list
+pyenv local
+pyenv versions
+pyenv help
+pyenv 3.12
+pyenv local 3.12
+python --version
+python3 --version
+pyenv local
+python
+clear
+pyenv install 3.12
+pyenv local 3.12.11 
+python --version
+python install --list
+pywnv install --list
+pyenv install --list
+pyenv install 3.12.11
+pyenv local 3.12.11 
+python --version
+cd ..
+python --version
+which python
+cd backend/
+exit
+pyenv local --unset
+clear
+exit
+btop
+htop
+top
+clear
+btop
+cd PALE
+cd ..
+cd PALE.deprecated/
+nvim README.md 
+git add .
+git commit -m "added README"
+git push
+git push origin dev
+clear
+lsa
+cat README.md 
+git switch master 
+nvim README.md
+git add .
+lazygit
+cd frontend/
+lsa
+nvim .gitignore 
+lazygit
+git add .
+lazygit
+git commit -m "updated README"
+git push
+git pull
+git pull origin master
+cd ..
+lsa
+git add README.md 
+git push
+pyenv local 3.12.11 
+python --version
+python3 --version
+python -m venv .venv
+source .venv/bin/activate
+python --version
+pyenv local
+pyenv local 3.12.11 
+py --version
+p --version
+python --version
+clear
+as
+lsa
+rm -rf .venv
+lsa
+deactivate
+rm .python-version 
+cd
+bat .bashrc
+python --version
+source .bashrc
+pyenv
+pyenv global
+lsa
+cd python
+lsa
+python --version
+pyenv version
+pyenv install 3.1211
+pyenv install 3.12.11
+pyenv uninstall 3.12.11 
+pyenv install 3.12.11
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+pyenv local 3.12.11 
+python --version
+which python
+clear
+pyenv local --unset 
+cd pale
+pyenv local
+pyenv local 3.12.11 
+cd backend
+lsa
+rm .python-version 
+cd ..
+which python
+clear
+pyenv local 3.12.11 
+which python
+exit
+printenv > "/tmp/tmp-141960N2fniifFENE4.txt"
+cd pale
+lsa
+pyenv local --unset
+pyenv local 3.12.11 
+lsa
+pyenv local
+pyenv local --unset
+nvim ~/.bashrc
+source ~/.bashrc
+pyenv local 3.12.11 
+clear
+"/home/archy/.cursor/extensions/ms-python.python-2025.6.1-linux-x64/python-env-tools/bin/pet" find --verbose
+exit
+which python
+exi
+exit
+source /home/archy/rack/code_rack/tsg/PALE-tsg/.venv/bin/activate
+exit
+source /home/archy/rack/code_rack/tsg/PALE-tsg/.venv/bin/activate
+cd backend/config/
+mv settings.py settings/base.py
+cd  ../apps/
+python init
+python -m init
+touch __init__.py
+cd ..
+mkdir core
+mkdir keys
+touch core/__init__.py
+touch config/settings/__init__.py
+exit
+python -m venv .venv
+source .venv/bin/activate
+clear
+python -m django --version
+which pip
+python -m pip install Django
+python -m django --version
+pip freeze > requirements.txt
+which python
+django-admin startproject gate
+django-admin startproject backend
+django-admin startproject backend .
+mkdir gate
+cd gate
+cd ..
+django-admin startproject config backend
+django-admin startproject config gate
+django-admin startproject config backend
+pip install djangorestframework psycopg2-binary pyJWT cryptography django-cors-headers python-dotenv
+cd backend
+lsa
+mkdir -p config/settings apps/users apps/entries/services spps/sync
+lta
+cd ..
+lta backend
+lta backend -3
+lta -3 backend 
+touch docker-compose.yml
+cd sage
+bat docker-compose.yml
+cd pale
+cd backend/keys/
+touch .gitkeep
+echo "# RSA Key Pair for JWT Signing\n\nGenerate keys using:\n\`\`\`bash\nssh-keygen -t rsa -b 2048 -m PEM -f private.pem\nopenssl rsa -in private.pem -pubout -outform PEM -out public.pem\n\`\`\`" > keys/README.md
+echo "# RSA Key Pair for JWT Signing\n\nGenerate keys using:\n\`\`\`bash\nssh-keygen -t rsa -b 2048 -m PEM -f private.pem\nopenssl rsa -in private.pem -pubout -outform PEM -out public.pem\n\`\`\`" > README.md
+cd apps
+lta
+python ../manage.py startapp users
+cd ..
+touch config/__init__.py
+touch config/settings/__init__.py
+touch apps/__init__.py
+touch apps/users/__init__.py
+touch apps/entries/__init__.py
+touch apps/entries/services/__init__.py
+touch apps/sync/__init__.py
+touch core/__init__.py
+cd apps
+python ../manage.py startapp users
+cd backed
+cd backend
+python manage.py startapp users_temp
+python manage.py startapp users
+python manage.py startapp app/users
+python manage.py startapp apps/users
+touch config/__init__.py
+touch config/settings/__init__.py
+touch apps/__init__.py
+touch apps/users/__init__.py
+touch apps/entries/__init__.py
+touch apps/entries/services/__init__.py
+touch apps/sync/__init__.py
+touch core/__init__.py
+touch config/__init__.py
+touch config/settings/__init__.py
+touch apps/__init__.py
+touch apps/users/__init__.py
+touch apps/entries/__init__.py
+touch apps/entries/services/__init__.py
+touch apps/sync/__init__.py
+touch core/__init__.py
+python manage.py startapp users_temp
+mv users_temp/*.py apps/users/
+mv users_temp/migrations apps/users/
+rm -rf users_temp
+python manage.py startapp entries_temp
+mv entries_temp/*.py apps/entries/
+mv entries_temp/migrations apps/entries/
+rm -rf entries_temp
+python manage.py startapp sync_temp
+mv sync_temp/*.py apps/sync/
+mv sync_temp/migrations apps/sync/
+rm -rf sync_temp
+python manage.py startapp users_temp
+python manage.py startapp users_temp1
+clear
+pip freeze > requirements.txt 
+bat requirements.txt 
+clear
+rm requirements.txt 
+cd ..
+pip freeze > requirements.txt 
+clear
+cd backend
+lta -9
+cd ..
+git add .
+cd backend/
+python manage.py check
+python manage.py makemigrations
+cd ..
+git add .
+git push
+git push -u origin main
+clear
+source /home/archy/rack/code_rack/tsg/PALE-tsg/.venv/bin/activate
+docker compose up
+cd sage
+bat docker-compose.yml 
+cd pale
+cd backend/
+cd ..
+docker compose up
+git pull 
+git add .
+history | rg stash
+git stash
+git pull
+git switch main
+git pull
+git branch -d shubham/fixes 
+git checkout -b shubham/fixes
+git log
+git stash list
+git stash push -m "fix: course progress bar, quiz icon"
+git stash apply
+git stash p
+git stash push -m "fix: course progress bar, quiz icon"
+git stash pop
+git stash list
+git stash apply
+git add .
+exit
+git commit -m "fix: course progress bar, quiz icon"
+git push -f
+git branch -m shubham/fixes-2
+git push -u origin shubham/fixes-2
+bun run --filter='./apps/web' type-check
+cd
+lazydocker
+clear
+exit
+bun dev:web
+exit
+bun dev:api
+exit
+cd sage
+docker compose up
+exit
+sudo lsblk -f
+ping google.com
+git diff --cached
+git diff --staged
+cd config
+git diff --staged
+git add starship*
+git diff --staged --name-only 
+git commit -m "added starship config"
+git push
+clear
+cd config
+git whatchanged?
+git whatchanged
+cd pale
+lsa
+cd mds/
+lsa
+obsidian plan.project.md 
+cd mds
+lsa
+cd mds
+cd ..
+nautilus .
+cd sage
+docker compose up
+lazydocker
+lazydocker
+source /home/archy/rack/code_rack/tsg/PALE-tsg/.venv/bin/activate
+cd shared/models/
+touch __init__.py user.py entry_log.py exit_log.py
+cd apps
+cd ..
+python manage.py check
+python manage.py makemigrations users
+python manage.py makemigrations entries
+python manage.py migrate
+python manage.py showmigrations
+python manage.py shell
+cd ..
+git add .
+git commit -m "feat: db schema setup"
+git push
+source /home/archy/rack/code_rack/tsg/PALE-tsg/.venv/bin/activate
+docker compose up
+source /home/archy/rack/code_rack/tsg/PALE-tsg/.venv/bin/activate
+cd backend/
+python manage.py makemigrations
+source /home/archy/rack/code_rack/tsg/PALE-tsg/.venv/bin/activate
+clear
+curl -fsSL "https://github.com/gpakosz/.tmux/raw/refs/heads/master/install.sh#$(date +%s)" | bash
+clear
+cd config
+clear

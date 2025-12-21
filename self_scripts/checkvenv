@@ -1,0 +1,6 @@
+# Function to get the current python venv name
+prompt_venv() {
+    if [ -n "$VIRTUAL_ENV" ]; then
+      echo "($(basename "$VIRTUAL_ENV")) "
+    fi
+  }
