@@ -6,6 +6,6 @@ This repo contains all the Omarchy Dotfiles I've setupa nd will help in case of 
 
 ## TO-DO:
 
-[ ] make notification history setup
-[X] make a clipboard history setup with support for images
-[X] add support for qt based applications
+- [ ] make notification history setup
+- [x] make a clipboard history setup with support for images
+- [x] add support for qt based applications
