@@ -383,6 +383,13 @@ tmux_conf_urlscan_options="--compact --dedupe"
 
 # this is the place to override or undo settings
 
+# custom binds for switching panes
+# Swap with pane in direction
+bind -n M-Left  swap-pane -t '{left-of}'
+bind -n M-Right swap-pane -t '{right-of}'
+bind -n M-Up    swap-pane -t '{up-of}'
+bind -n M-Down  swap-pane -t '{down-of}'
+
 # increase history size
 #set -g history-limit 10000
 

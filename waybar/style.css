@@ -35,7 +35,8 @@
 #pulseaudio,
 #custom-omarchy,
 #custom-screenrecording-indicator,
-#custom-update {
+#custom-update,
+#custom-todoist {
   min-width: 12px;
   margin: 0 7.5px;
 }
@@ -80,4 +81,16 @@ tooltip {
 
 #custom-screenrecording-indicator.active {
   color: #a55555;
+}
+
+#custom-todoist.error {
+  color: #a55555;
+}
+
+#custom-todoist.urgent {
+  color: #ff6b6b;
+}
+
+#custom-todoist.empty {
+  opacity: 0.6;
 }

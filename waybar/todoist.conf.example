@@ -1,0 +1,21 @@
+# Todoist Waybar Configuration
+# Copy your API token from: https://todoist.com/app/settings/integrations/developer
+
+# Your Todoist API token (required)
+API_TOKEN=""
+
+# Default project ID to filter tasks (leave empty to use Inbox)
+# To find project ID, use: curl -H "Authorization: Bearer YOUR_TOKEN" https://api.todoist.com/rest/v2/projects
+PROJECT_ID=""
+
+# Maximum number of tasks to display (default: 10)
+TASK_LIMIT=10
+
+# Refresh interval in seconds (default: 60)
+REFRESH_INTERVAL=60
+
+# Command to open Todoist app (default: opens web app)
+# For desktop app: "todoist" or "/usr/bin/todoist"
+# For web: "xdg-open https://todoist.com/app"
+TODOIST_APP_CMD="xdg-open https://todoist.com/app"
+
