@@ -51,9 +51,68 @@ lta() {
 }
 
 rcpp() {
-  f="$1"
-  in="${2:-input.txt}"
-  g++ "$f" -o "${f%.cpp}" && ./"${f%.cpp}" < "$in"
+  # Ensure GNU time is used (install with: pkg install time)
+  local time_cmd="command time" 
+  
+  if [[ "$1" == "--no" ]]; then
+    shift
+    local f="$1"
+    local bin="./${f%.cpp}"
+    g++ "$f" -o "$bin" && {
+      # Redirect bin stdout to tty, capture time stderr into var
+      local stats=$($time_cmd -f "%e %M" "$bin" 2>&1 >/dev/tty)
+      local r_time=$(echo "$stats" | awk '{print $1 * 1000}')
+      local r_mem=$(echo "$stats" | awk '{print $2}')
+      
+      # FIX: Added variables to printf
+      printf "\n\nTime: %s ms | Memory: %s KB\n" "$r_time" "$r_mem"
+    }
+  else
+    local f="$1"
+    local in="${2:-input.txt}"
+    local bin="./${f%.cpp}"
+    g++ "$f" -o "$bin" && {
+      local stats=$($time_cmd -f "%e %M" "$bin" < "$in" 2>&1 >/dev/tty)
+      local r_time=$(echo "$stats" | awk '{print $1 * 1000}')
+      local r_mem=$(echo "$stats" | awk '{print $2}')
+      printf "\n\nTime: %s ms | Memory: %s KB\n" "$r_time" "$r_mem"
+    }
+  fi
+}
+
+rncpp() {
+  rcpp --no "$@"
+}
+
+unalias ff 2>/dev/null
+
+ff() {
+  fzf \
+    --preview '[[ -f {} ]] && bat --style=numbers --color=always --paging=never --line-range :300 {}' \
+    --preview-window=up:70% \
+    --bind 'ctrl-d:execute(
+        read -p "Delete {}? (y/n): " confirm && 
+        [[ $confirm == [yY] ]] && rm -v {} && 
+        || echo "Aborted"
+    )' \
+    --bind 'ctrl-e:execute(
+        $EDITOR {}
+    )' \
+    --bind 'enter:execute(
+        $EDITOR {}
+    )+accept' \
+    "$@"
+}
+
+unalias ffr 2>/dev/null
+
+ffr() {
+  rg --line-number --no-heading --color=always "" |
+  fzf --ansi \
+      --preview 'bat --color=always --paging=never {1} --highlight-line {2}' \
+      --preview-window=up:60% \
+      --delimiter ':' \
+      --bind 'change:reload:rg --line-number --no-heading --color=always {q} || true'
 }
 
 # pyenv setup
