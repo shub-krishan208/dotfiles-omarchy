@@ -38,4 +38,6 @@ if [[ -n "$SELECTED_WALLPAPER" ]]; then
     
     # Run SWWW command
     swww img -t any "$SELECTED_WALLPAPER"
+    REAL_PATH=$(readlink -f "$CURRENT_BACKGROUND_LINK")
+    matugen image "$REAL_PATH"
 fi

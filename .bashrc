@@ -107,7 +107,7 @@ ff() {
 unalias ffr 2>/dev/null
 
 ffr() {
-  rg --line-number --no-heading --color=always "" |
+  rg --hidden --line-number --no-heading --color=always "" |
   fzf --ansi \
       --preview 'bat --color=always --paging=never {1} --highlight-line {2}' \
       --preview-window=up:60% \
@@ -120,3 +120,20 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+
+# pyvenv source shortcut
+pysrc() {
+  local venv_path=".venv"
+
+  if [[ -n "$1" ]]; then
+    venv_path = "$1"
+  fi
+  
+  if [[ -f "$venv_path/bin/activate" ]]; then
+    source "$venv_path/bin/activate"
+    echo "Activated : $venv_path/bin/activate"
+  else
+    echo "Error: '$venv_path/bin/activate' not found!"
+    return 1
+  fi
+}
